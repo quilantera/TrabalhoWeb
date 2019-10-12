@@ -1,0 +1,391 @@
+#main{
+    padding: 0;
+    display:grid;
+    grid-template-rows: 29vh 50vh 70vh 30vh;
+grid-template-columns: 55vh 100vh 70vh 157vh;
+grid-template-areas: "header nav aside" "header content aside" "header content aside" "header content aside";
+
+}
+
+.mainHeader{
+    grid-area:header; background:white;
+    border-right: 0.3px solid;
+    border-color:  #e6ecf0;
+    min-width: 300px;
+    position: fixed;
+}
+.mainNav{
+    grid-area:nav; background:white; 
+    border-right: 0.3px solid;
+    border-bottom: 9.5px solid;
+    border-color:  #e6ecf0;
+    min-width: 300px;
+    
+  
+   
+}
+.mainContent{
+ 
+    grid-area:content; background:white; 
+    border-right: 0.3px  solid;
+    border-color: #e6ecf0;
+    min-width: 300px;
+}
+.mainAside{
+    grid-area:aside; background:white; 
+    min-width: 300px;
+    
+}
+#menuPerfil{
+    margin-left:60px;
+    padding: 0px 20px 20px 20px;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: relative;
+    border-collapse: collapse;
+    flex-wrap: wrap;
+     list-style: none;
+     vertical-align: middle;
+    }
+
+  
+    .link{
+      display:block;
+      
+      margin: 7px 5px 10px 0px;
+      
+    }
+  
+    .link img{
+    
+      margin: 0px 2px;
+      display: inline-block;
+    }
+    .link:hover{
+      background-color:rgba(29, 161, 242, 0.1)  ;
+      border-radius: 10px;
+    }
+    .link a{
+      
+      list-style: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+        font-size : 18px;
+        color: black;
+        color:rgba(15, 15, 15, 0.918);
+        text-decoration: none;
+        font-weight: bold;
+        white-space: pre-wrap;
+        display:inline-block;
+ 
+        
+    }
+    .imagemlogo{
+      margin: 10px 0px;
+      position: static;
+      display: block;
+    }
+    #areaTexto{        
+        list-style: none;
+    }
+    #areaTexto ul{
+      padding: 7px;
+        list-style: none;
+      
+    }
+    #areaTexto ul li h1{
+        position: static;
+        margin: 5px;
+        padding: 10px 10px 2px 3px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+        font-size : 20px;
+        color:rgba(15, 15, 15, 0.918);
+        text-decoration: none;    
+       
+        
+    }
+    .tweet {
+       
+        position: static;
+        display: inline-block;
+        background :  #00acee;
+        text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 13px;
+    border-radius: 6px;
+    border: 0px, solid;
+    width:100px;
+    padding:5px;
+    }
+  
+    #areaTexto ul li textarea{
+      overflow: auto;
+        position: static;
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 5px 15px 5px;
+         width: 500px;
+        font-size: 1rem;
+        resize: none;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(22, 23, 24);
+    border:0px solid #ccc;
+    }
+    blockquote.twitter-tweet {
+        display: inline-block;
+        font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 16px;
+        border-color: #eee #ddd #bbb;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+        margin: 10px 5px;
+        padding: 0 16px 16px 16px;
+        max-width: 468px;
+      }
+      
+      blockquote.twitter-tweet p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 20px;
+      }
+      
+      blockquote.twitter-tweet a {
+        color: inherit;
+        font-weight: normal;
+        text-decoration: none;
+        outline: 0 none;
+      }
+      
+      blockquote.twitter-tweet a:hover,
+      blockquote.twitter-tweet a:focus {
+        text-decoration: underline;
+      }
+      .feed{ 
+        border-collapse: collapse;
+        display: flex;
+        flex-wrap: wrap;
+            list-style: none;
+            margin: 2;
+            font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+            font-size : 17px;
+            vertical-align: middle;
+      }
+      .pagfeed{
+        border-collapse: collapse;
+        display:flex;
+        justify-content: space-between;
+      padding: 3px 10px 0px 10px;        
+      }
+      .imagemes{
+        display:inline-block;
+      }
+      .imagem{
+       
+        display: flex;
+    
+            list-style: none;
+            margin: 2;
+            font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+            font-size : 17px;
+            vertical-align: middle;
+      }
+      .imagem img{
+        
+        height:30px 30px;
+        
+        border-radius: 45px;
+      }
+    
+      .nick{
+        display: inline-block;
+        text-align: center;
+        font-size : 16px;
+        font-weight: bold;
+        white-space: pre-wrap;
+       
+    line-height: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    word-wrap: break-word;
+      }
+      .paranick{
+        display: inline-block;
+        text-align: center;
+        font-size : 15px;
+      
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+        color: rgb(101, 119, 134);
+        text-decoration: none; 
+     
+        
+      }
+      .text{
+        display: inline-block;
+        font-size : 15px;
+        padding: 3px 7px;
+        font-weight: normal;
+        text-decoration: none;
+        max-width:500px;
+      }
+      .texto{
+        display: inline-block;
+        font-size : 14px;
+        padding: 0px 7px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(22, 23, 24);
+        font-weight: normal;
+        text-decoration: none; 
+      }
+      .barracurtir{
+        display: flex;
+        
+        padding: 0px 30px 0px 60px;
+        align-items: stretch;
+        box-sizing: border-box;
+        
+      }
+      .imagem_tarefas{
+        margin: 0px 30px;
+      }
+      .pesquisar{
+        display:flex;
+        margin-top: 20px;
+        margin-left: 40px;
+        border-radius: 15px;
+        background-color:#e6ecf0; 
+        min-width: 150px;
+        width: 350px;
+      padding: 2px;
+      }
+      .pesquisar img{
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+      .pesquisa{
+        display:inline-block;
+        background-color:#e6ecf0;
+        border:0px solid;
+        font-size:17px;
+        padding: 5px;
+        margin: 2px;
+        min-width: 150px;
+        max-width: 350px;
+      }
+      .assuntos{
+      
+        padding:10px 5px 10px 40px;
+        display:block;
+        
+      }
+      
+      .assuntostitulo{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom:0.5px solid;
+        border-color:#e6ecf0;
+        background-color:rgb(245, 248, 250);
+      }
+      .assuntoscorpo{
+        border-bottom: 0.5px solid;
+        border-color:#e6ecf0;
+        background-color:rgb(245, 248, 250);
+        padding-bottom: 10px;
+      }
+      .assuntoscorpo:hover{
+        background-color:#e6ecf0;
+      }
+      .assuntosmais{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color:rgb(245, 248, 250);
+      }
+      .assuntosmais{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color:rgb(245, 248, 250);
+      }
+      .espaco{
+        padding-top: 10px;
+      }
+       .hashtag{
+        padding-top:5px;
+        padding-bottom: 1px;
+        padding-left: 15px;
+        padding-right:10px;
+        
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+      font-size: 15px;
+      color: black;
+      font-weight: bold;
+      display:inline;
+      }
+      .textoassuntos{
+        padding-top:5px;
+        padding-bottom: 1px;
+        padding-left: 15px;
+        padding-right:10px;
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+      font-size:13px;
+      color: #96a3ae;
+      }
+        .textotitulo{
+          display: inline-block;
+        padding :5px 20px;
+        list-style: none;
+        font-weight: 900;
+            margin: 2;
+            
+            text-rendering: geometricPrecision;
+            font-family:"Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+            font-size : 19px;
+            word-wrap: break-word;
+            color: rgba(0,0,0,1.00);
+            vertical-align: middle;
+      }
+      .textomais{
+        padding: 8px 10px 10px 20px; 
+        font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+        color: #45b2f3;
+      }
+      .textomais:hover{
+        text-decoration: underline;
+      }
+      .principal{
+        border-bottom: 0.3px solid #e6ecf0;
+        -ms-flex-align: stretch;
+        -ms-flex-direction: column;
+        -ms-flex-negative: 0;
+        -ms-flex-preferred-size: auto;
+        -webkit-align-items: stretch;
+        -webkit-box-align: stretch;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-basis: auto;
+        -webkit-flex-direction: column;
+        -webkit-flex-shrink: 0;
+        align-items: stretch;
+        box-sizing: border-box;
+        display: flex;
+        flex-basis: auto;
+        flex-direction: column;
+        flex-shrink: 0;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 5px;
+        padding-top: 5px;
+        position: relative;
+        z-index: 0;
+       
+      }
+      
+      
